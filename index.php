@@ -13,19 +13,19 @@
 	<div class="container">
 		<h1>Seminar Information</h1>
 		<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+<!--		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
 		
 
 
 		<form action="reg.php" method="post">
 			<h3>報名人數</h3>
-			<select name="sel">
+			<p><select name="sel" class="form-control">
 			<?php
 				for($i=1;$i<=50;$i++)
 					echo "<option value\"{$i}\">{$i} 人</option>"; 
 			?>
-			</select>
-			<input class="btn btn-success" type="submit" value="submit" />
+			</select></p>
+			<p><input class="btn btn-success" type="submit" value="submit" /></p>
 		</form>
 	</div>
 </div>

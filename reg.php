@@ -19,13 +19,13 @@
 ?>
 
 <div class="page-header">
-	<h1>活動名稱 報名系統</h2>
+	<h1><活動名稱>報名</h2>
 </div>
 
-<form action="#" method="post">
+<form action="store.php" method="post">
 
 <div class="row">
-<table class="table">
+<table class="table table-hover">
 <thead>
 <tr>
 	<th class="col-md-1">#</th>
@@ -35,7 +35,8 @@
 	<th class="col-md-2">所屬單位</th>
 	<th class="col-md-1">餐飲習慣</th>
 </tr>
-
+</thead>
+<tbody>
 <?php
 	for($i=1; $i<=$len; $i++){
 ?>	
@@ -46,7 +47,7 @@
 	<td><div class="form-group"><input type="text" name="email<?php echo $i; ?>" placeholder="Email" class="form-control" /></div></td>
 	<td><?php if ($i==1) echo '<div class="form-group"><input type="text" name="company" placeholder="Company" class="form-control" /></div>'; ?></td>
 	<td>
-		<select name="eat<?php echo $i; ?>">
+		<select name="eat<?php echo $i; ?>" class="form-control">
 			<option value="all">葷</option>
 			<option value="vege">素</option>
 		</select>
@@ -56,7 +57,7 @@
 	}
 
 ?>	
-	
+</tbody>
 </table>
 </div>
 	
